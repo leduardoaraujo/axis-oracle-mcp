@@ -1,0 +1,4 @@
+oracledb>=2.4.0
+pydantic>=2.12.0
+python-dotenv>=1.2.0
+mcp>=1.26.0

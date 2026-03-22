@@ -1,0 +1,19 @@
+# ─── Conexão obrigatória ───────────────────────────────────────────────────────
+# DSN pode ser:
+#   - Easy Connect:        host:port/service_name   (ex: localhost:1521/XEPDB1)
+#   - TNS alias:           MYDB  (requer tnsnames.ora configurado)
+#   - Descriptor completo: (DESCRIPTION=(ADDRESS=...)(CONNECT_DATA=...))
+ORACLE_DSN=localhost:1521/XEPDB1
+ORACLE_USER=readonly_user
+ORACLE_PASSWORD=secret
+
+# ─── Pool de conexões (opcional) ──────────────────────────────────────────────
+ORACLE_POOL_MIN=1
+ORACLE_POOL_MAX=3
+
+# ─── Thick Mode — necessário para recursos avançados do Oracle Client ─────────
+# Defina como "true" se precisar de suporte a tipos avançados (BLOB, CLOB grande,
+# Advanced Queuing, etc.) ou se o seu banco for Oracle < 12.2.
+# Requer Oracle Instant Client instalado.
+ORACLE_THICK_MODE=false
+# ORACLE_CLIENT_LIB_DIR=/opt/oracle/instantclient_21_9
